@@ -69,7 +69,7 @@
     border-radius: 1em;
     box-shadow: 0.5em 0.4em 3em gray;
     margin-top: 1em;
-    overflow: scroll;
+    overflow: hidden;
   }
   .left {
     background-color: #333333;
@@ -90,9 +90,11 @@
     color: #333333;
     padding-top: 0.5em;
     width: 85%;
+    height: 100%;
     float: right;
     padding-left: 0.5em;
-    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
   }
   a:hover {
     text-decoration: none;

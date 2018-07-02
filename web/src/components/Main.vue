@@ -39,14 +39,14 @@
   }
   .title {
     color: #333333;
-    font-family: pingfang;
+    font-family: pingfang, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
     font-size: 8em;
     text-align: center;
     letter-spacing: 0.05em;
   }
   .slogan {
     color: white;
-    font-family: pingfang;
+    font-family: pingfang, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial,sans-serif;
     text-align: center;
     background-color: #333333;
     font-size: 1.2em;
@@ -61,27 +61,31 @@
   .content {
     background-color: #333333;
     height: 60%;
-    width: 70%;
+    width: 75%;
     margin: 0 auto;
     border-radius: 1em;
     box-shadow: 0.5em 0.4em 3em gray;
     margin-top: 1em;
     position: relative;
     top: -3%;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
   }
   .category {
-    height: 100%;
-    width: 20%;
     float: left;
     color: #333333;
     font-size: 2em;
+    flex: 1.0;
     writing-mode: vertical-lr;
     letter-spacing: 1em;
     text-align: center;
     text-indent: 1em;
     vertical-align:middle;
     padding-left: 1.7em;
-    font-family: pingfang;
+    font-family: pingfang, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial,sans-serif;
   }
   .category:hover > a {
     color: white;
