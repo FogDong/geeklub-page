@@ -1,67 +1,23 @@
 <template>
-  <div class="container">
-    <div class="title">GeeKlub</div>
-    <div class="slogan">Talk is cheap, show me the code.</div>
-    <div class="content">
-      <div class="category about"><router-link to="/about">关于我们</router-link></div>
-      <div class="category event"><router-link to="/event">未来活动</router-link></div>
-      <div class="category history"><router-link to="/history">往期活动</router-link></div>
-      <div class="category members"><router-link to="/members">社团成员</router-link></div>
-      <div class="category contact"><router-link to="/contact">加入我们</router-link></div>
-    </div>
+  <div class="content">
+    <div class="category about"><router-link to="/about">关于我们</router-link></div>
+    <div class="category event"><router-link to="/event">未来活动</router-link></div>
+    <div class="category history"><router-link to="/history">往期活动</router-link></div>
+    <div class="category members"><router-link to="/members">社团成员</router-link></div>
+    <div class="category contact"><router-link to="/contact">加入我们</router-link></div>
   </div>
 </template>
 
 <script>
-  import 'bootstrap/dist/css/bootstrap.css'
-  import 'bootstrap-vue/dist/bootstrap-vue.css'
   export default {
-    data() {
-      return {
-
-      }
-    },
-    methods: {
-      about() {
-      }
-    }
   }
 </script>
 
 <style scoped>
-  .container {
-    height: 100%;
-    padding: 0;
-  }
-  @font-face {
-    font-family: pingfang;
-    src: url("../assets/pingfang.ttf");
-  }
-  .title {
-    color: #333333;
-    font-family: pingfang, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
-    font-size: 8em;
-    text-align: center;
-    letter-spacing: 0.05em;
-  }
-  .slogan {
-    color: white;
-    font-family: pingfang, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial,sans-serif;
-    text-align: center;
-    background-color: #333333;
-    font-size: 1.2em;
-    margin: 0 auto;
-    width: 60%;
-    letter-spacing: 0.5em;
-    padding: 0 2em;
-    border-radius: 0.3em;
-    position: relative;
-    top: -5%;
-  }
   .content {
     background-color: #333333;
     height: 60%;
-    width: 75%;
+    width: 70%;
     margin: 0 auto;
     border-radius: 1em;
     box-shadow: 0.5em 0.4em 3em gray;
@@ -84,7 +40,7 @@
     text-align: center;
     text-indent: 1em;
     vertical-align:middle;
-    padding-left: 1.7em;
+    padding-left: 2em;
     font-family: pingfang, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial,sans-serif;
   }
   .category:hover > a {
